@@ -2,6 +2,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//This is a problem of discrete mathematics test in PTIT 
+
 int n, k;
 int x[30];
 

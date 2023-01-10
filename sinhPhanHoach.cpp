@@ -31,13 +31,11 @@ void genNext(){
 	if(r != 0){
 		x[++cnt] = r;
 	}
-
 }
 
 void display(){
 	for(int i = 1; i <= cnt; i++)
 		cout << x[i] << ' ';
-
 	cout << endl;
 }
 
@@ -49,6 +47,4 @@ int main(){
 		genNext();
 		display();
 	}
-
-
 }

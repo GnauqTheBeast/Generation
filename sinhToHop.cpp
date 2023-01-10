@@ -1,3 +1,5 @@
+//Ban chat la sinh ra tat ca cac xau nhi phan, moi xau la mot cau hinh
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -13,7 +15,7 @@ bool isLast(); // Kiem tra cau hinh cuoi cung
 vector<vector<int>> v;
 
 int main(){
-	init(); 
+    init(); 
     while(!isLast()){
 		display();
         genNext();
@@ -38,15 +40,15 @@ void init(){
 }
 
 void display(){
-    vector<int> t;
+	vector<int> t;
 	for(int i = n; i >= 1; i--){ 
-        if(x[i] == 1){
-            t.push_back(a[i]);
-        }
+        	if(x[i] == 1){
+           		t.push_back(a[i]);
+        	}
 	}
-    sort(t.begin(), t.end());
-    if(t.size() != 0)
-        v.push_back(t);
+	sort(t.begin(), t.end());
+	if(t.size() != 0)
+        	v.push_back(t);
 }
 
 bool isLast(){
